@@ -40,10 +40,10 @@ public class DragAndDropItem : MonoBehaviour
     { 
         Vector2 mousePos = Input.mousePosition;
         mousePos -= new Vector2(Screen.width/2, Screen.height/2);
-        float rectMinX = _rectTransform.anchoredPosition.x - _rectTransform.sizeDelta.x;
-        float rectMinY = _rectTransform.anchoredPosition.y - _rectTransform.sizeDelta.y;
-        float rectMaxX = _rectTransform.anchoredPosition.x + _rectTransform.sizeDelta.x;
-        float rectMaxY = _rectTransform.anchoredPosition.y + _rectTransform.sizeDelta.y;
+        float rectMinX = _rectTransform.anchoredPosition.x - _rectTransform.sizeDelta.x/2;
+        float rectMinY = _rectTransform.anchoredPosition.y - _rectTransform.sizeDelta.y/2;
+        float rectMaxX = _rectTransform.anchoredPosition.x + _rectTransform.sizeDelta.x/2;
+        float rectMaxY = _rectTransform.anchoredPosition.y + _rectTransform.sizeDelta.y/2;
         
         return ((mousePos.x >= rectMinX && mousePos.x <= rectMaxX) && (mousePos.y >= rectMinY && mousePos.y <= rectMaxY));
     }
