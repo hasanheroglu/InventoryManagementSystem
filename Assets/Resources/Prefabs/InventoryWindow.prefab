@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3266865847639951401}
   - component: {fileID: 2383647560010998258}
+  - component: {fileID: -1500249842132383943}
   m_Layer: 5
   m_Name: InventoryWindow
   m_TagString: Untagged
@@ -49,6 +50,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfc47bf440a0e44d2897f7195545f999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &-1500249842132383943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3266865847639951406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6749a46ffb5ff429d9b6387bff871835, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _width: 10
+  _height: 10
 --- !u!1 &3266865847656329997
 GameObject:
   m_ObjectHideFlags: 0
